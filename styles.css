@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;700&display=swap");
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo Bhaijaan 2', sans-serif;
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+nav .logo {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+}
+
+nav .logo i {
+  
+  padding-left: 0.75rem;
+}
+nav .bars-menu {
+  display: none;
+}
+nav .logo h4 {
+  font-family: 'Kanit', sans-serif;
+}
+
+nav .nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+nav .nav-items .nav-item {
+  padding: 0 1rem;
+}
+
+nav .nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+}
+
+nav .nav-link:hover {
+  
+}
+
+/* Heor styling */
+.hero {
+  background-color: #f8f7fc;
+}
+
+.hero-section {
+  max-width: 1366px;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.hero-section .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section .content h4 {
+  color: black;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .content h1 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .content p {
+  color: rgb(29, 29, 29);
+  font-size: 1.4rem;
+}
+
+.hero-section .content p span.purple {
+  color: #726f6e;
+}
+
+.hero-section form {
+  display: flex;
+}
+.btn {
+  width: 10rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  background-color: black;
+  font-family: "Tajawal", sans-serif;
+}
+
+
+
+.btn a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+/* Features section */
+section.features {
+  padding: 2rem 0;
+  background-color: #f8f7fc;
+}
+
+section.features .features-section {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features-section h4 {
+  color: black;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.features-section .qualities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-section .qualities .quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 2rem;
+  max-width: 17rem;
+  border-radius: 1rem;
+  margin: 1rem 1rem;
+}
+
+ 
+
+.qualities .quality i {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+.qualities .quality i:hover {
+  background-color: #c3604b;
+}
+
+.qualities .quality h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.qualities .quality h3:hover {
+  background-color: #c3604b;
+}
+
+
+.qualities .quality p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+}
+.qualities .quality p:hover {
+  background-color: #c3604b;
+}
+
+.qualities .quality a {
+  color: white;
+  font-size: 40px;
+}
+
+/*  imgaes section */
+.d-img {
+  font-size: 1px;
+}
+/* Footer */
+footer {
+  background-color: #c3604b;
+  height: 15vh;
+  margin-top: 5rem;
+  padding: 2rem 0;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.footer-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section .socials {
+  margin-bottom: 1rem;
+}
+.footer-section .socials i {
+  padding: 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+.footer-section .socials i:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-media {
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 1300px) {
+  * {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 1175px) {
+  * {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  * {
+    text-align: center;
+  }
+  .hero img {
+    display: none;
+  }
+  .hero-section {
+    align-items: center;
+    padding: 2rem 0rem;
+    width: 50%;
+  }
+  .hero .btn {
+    align-self: center;
+  }
+  .hero .content {
+    margin-top: 2rem;
+  }
+  .features-section .qualities {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section.features .features-section {
+    align-items: center;
+  }
+  .phones-section h4 {
+    align-self: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero-section .content h1 {
+    font-size: 2rem;
+  }
+  .phones-section {
+    align-items: center;
+  }
+  .phones-section .phones {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 504px) {
+  .phones-section .phones {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  nav .bars-menu {
+    display: block;
+    font-size: 3rem;
+  }
+  nav .nav-items {
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #c3604b;
+    padding: 2rem 0;
+  }
+  nav .nav-items .nav-item {
+    margin: 1rem 0;
+  }
+  nav .nav-items .nav-item a {
+    color: white;
+  }
+  nav .nav-items.active {
+    display: flex;
+  }
+}
+
+
+/* more section */
+
+.more-1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.more-btn a{
+  width: 10rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: "Tajawal", sans-serif;
+  text-align: center;
+  padding-left: 50px;
+  background-color: black;
+  padding-right: 100px;
+  color: white;
+}
+
+.more-2 {
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 30px;
+}
